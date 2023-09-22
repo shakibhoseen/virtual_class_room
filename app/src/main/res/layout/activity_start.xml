@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/androidp"
+    android:gravity="center"
+    tools:context=".StartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Virtual ClassRoom"
+        android:id="@+id/chat_app"
+        android:textSize="30dp"
+        android:textColor="#FFFFFf"
+        android:textStyle="bold"
+        android:fontFamily="@font/alfa_slab_one"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/chat_app"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:layout_centerHorizontal="true"
+
+        android:textStyle="bold"
+        android:textSize="20sp"
+
+        android:id="@+id/btn_login"
+        android:textColor="#FFFCFC"
+        android:background="@drawable/trans_white_rectangle"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btn_login"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_register"
+        android:text="register"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/trans_white_rectangle"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

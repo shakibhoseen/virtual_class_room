@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="8dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@drawable/dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register with "
+                android:textColor="#fff"
+                android:fontFamily="@font/alfa_slab_one"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rafTxt"
+                android:layout_marginTop="15dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@+id/rafTxt"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:id="@+id/stusentOpId"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+
+
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/custom_button"
+                    android:text="student"/>
+
+                <Button
+
+                    android:layout_width="wrap_content"
+
+                    android:id="@+id/teacherOpId"
+                    android:textColor="#fff"
+
+
+                    android:background="@drawable/custom_button"
+                    android:layout_height="wrap_content"
+                    android:text="Teacher"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

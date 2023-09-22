@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.assignment.AssignDetailsActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/card0"
+        app:cardElevation="6dp"
+        android:outlineAmbientShadowColor="#030303"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="#FFFFFf"
+            android:theme="@style/ToolbarThemeOvarly"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/identify_submit_img"
+                    android:src="@drawable/ic_details_black_24dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:layout_marginRight="35dp"
+                    android:textSize="14sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:id="@+id/toolbar_txt"
+                    android:text="Details"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </androidx.cardview.widget.CardView>
+
+<ScrollView
+    android:layout_below="@+id/card0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/difference_slide_blue_item"
+        android:layout_marginBottom="4dp"
+        android:padding="10dp">
+
+
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+
+            android:fontFamily="@font/alfa_slab_one"
+
+            android:textColor="#030303"
+            android:text="Title for quize"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:id="@+id/test_time_icon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_below="@id/title"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_access_time_black_24dp" />
+
+        <TextView
+            android:id="@+id/raf_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/test_time_icon"
+            android:text="publish date:"
+            android:fontFamily="@font/alfa_slab_one"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/publish_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/raf_text"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/test_time_icon"
+
+            android:text="publish date"
+            android:fontFamily="@font/alfa_slab_one"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/describtion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test_time_icon"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/iceland"
+            android:textColor="#030303"
+            android:text="describtion for the quize . how can i described the whole quize event"
+            android:textSize="18sp" />
+
+
+
+
+
+
+        <!--  </com.google.android.material.card.MaterialCardView> -->
+
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/startRaf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/describtion"
+            android:text="starting time of MCQ:"
+            android:fontFamily="@font/alfa_slab_one"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startRaf"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:textColor="#18631B"
+            android:text="12:34:20"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:textStyle="bold"
+
+            android:gravity="center_horizontal" />
+
+
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/endRaf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/start_time"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/alfa_slab_one"
+
+            android:text="Ending time of MCQ:"
+
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/endRaf"
+            android:layout_centerHorizontal="true"
+            android:textColor="#861111"
+            android:text="12:34:20"
+            android:fontFamily="@font/alfa_slab_one"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+    <!--</com.google.android.material.card.MaterialCardView>-->
+
+</ScrollView>
+
+</RelativeLayout>

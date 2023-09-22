@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@drawable/androidp"
+    tools:context=".account.teacher.ModifyCorsPassActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/trans_white_rectangle"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/carter_one"
+                android:text="change password" />
+
+            <CheckBox
+                android:id="@+id/checkbox_passId"
+                android:layout_width="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/carter_one"
+                    android:text="Old password: " />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/old_pass_input_layout"
+                    android:hint="Enter your Old Password"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/carter_one"
+                    android:text="New password: " />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/new_pass_input_layout"
+                    android:hint="Enter your New Password"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/pass_chang_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="change" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/carter_one"
+                android:text="change Others" />
+
+            <CheckBox
+                android:id="@+id/checkbox_otherId"
+                android:layout_width="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/trans_white_rectangle"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/crseCodeViewId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/carter_one"
+                        android:text="Course Code: "
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/courseCodeId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/crseCodeViewId"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Course Code"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="6"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/titleViewId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/courseCodeId"
+                        android:fontFamily="@font/carter_one"
+                        android:text="Course Title: "
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/courseNameId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/titleViewId"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Course Title"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/batchRafTxtid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/courseNameId"
+                        android:fontFamily="@font/carter_one"
+                        android:text="Batch Name: "
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/batchNameViewId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/batchRafTxtid"
+                        android:layout_toRightOf="@+id/batchRafTxtid"
+                        android:fontFamily="@font/carter_one"
+                        android:text="CSE 6th batch"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/carter_one"
+                    android:text="change Batch" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_batchId"
+                    android:layout_width="wrap_content"
+                    android:buttonTint="#FFFFFF"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/line3"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/spinner_batch_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/changeOther_btn_Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/securityKeyId"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/custom_button"
+                    android:text="change" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

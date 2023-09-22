@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Create Quiz"
+        android:icon="@drawable/quiz_menu"
+        android:id="@+id/action_create"
+        app:showAsAction="never"
+        />
+    <item
+        android:title="Create Assignment"
+        android:icon="@drawable/assignment"
+        android:id="@+id/action_assignment"
+        app:showAsAction="never"
+        />
+    <item
+        android:title="Upload Slide"
+        android:icon="@drawable/assignment"
+        android:id="@+id/action_slide"
+        app:showAsAction="never"
+        />
+    <item
+        android:title="Edit course"
+        android:id="@+id/action_edit_course"/>
+
+    <item
+        android:title="Video Conference"
+        android:id="@+id/action_video_conf"/>
+</menu>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".slide.SlideModificationActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slide Description: "
+        android:layout_marginTop="10dp"
+        android:id="@+id/describtion_view"
+        android:layout_centerHorizontal="true"
+
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:errorEnabled="true"
+        android:layout_below="@+id/describtion_view"
+        android:id="@+id/describtion"
+        android:hint="Slide Description..."
+        android:layout_marginBottom="10dp"
+        app:helperText=""
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/describtion"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/line1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="File Attachment : "
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/quiz_title_id"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/attachment"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/attachment"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/filename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="No file Selected"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/upload"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/filename"
+        android:layout_centerHorizontal="true"
+        android:text="upload"/>
+
+</RelativeLayout>

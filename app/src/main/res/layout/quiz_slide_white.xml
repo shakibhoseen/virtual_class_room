@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="2dp"
+    android:orientation="vertical">
+
+
+   <androidx.cardview.widget.CardView
+         android:layout_width="match_parent"
+         android:layout_marginBottom="6dp"
+         app:cardCornerRadius="8dp"
+         app:cardElevation="8dp"
+         app:cardPreventCornerOverlap="false"
+         android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:padding="10dp">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/line3"
+            android:visibility="visible"
+            android:layout_below="@+id/publish_date"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_toStartOf="@id/identify_submit_img"
+            android:layout_toLeftOf="@id/identify_submit_img"
+            android:layout_alignRight="@+id/title"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/increase_decrease_txt"
+                android:text="(++1 , --0)"
+                android:layout_marginRight="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_person_black_24dp" />
+
+            <TextView
+
+                android:id="@+id/count_student_id"
+                android:layout_width="wrap_content"
+                android:textColor="#9B5E05"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="32dp"
+            android:id="@+id/prepare_for_exam"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_settings_black_24dp" />
+
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="32dp"
+            android:id="@+id/identify_submit_img"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/custom_button"
+            android:src="@drawable/quiz" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/identify_submit_img"
+            android:layout_toLeftOf="@id/identify_submit_img"
+            android:maxLines="2"
+            android:fontFamily="@font/alfa_slab_one"
+            android:ellipsize="end"
+            android:textColor="#030303"
+            android:text="Title for quize"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/test_time_icon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_below="@id/title"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_access_time_black_24dp" />
+
+        <TextView
+            android:id="@+id/publish_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/test_time_icon"
+            android:text="publish date"
+            android:fontFamily="@font/alfa_slab_one"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/describtion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test_time_icon"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/iceland"
+            android:textColor="#030303"
+            android:text="describtion for the quize . how can i described the whole quize event"
+            android:textSize="18sp" />
+
+
+
+        <!--  <com.google.android.material.card.MaterialCardView
+              android:layout_width="match_parent"
+              android:layout_below="@+id/describtion"
+              android:id="@+id/card1"
+              app:cardCornerRadius="20dp"
+              android:layout_marginBottom="20dp"
+              android:layout_height="wrap_content"> -->
+        <RelativeLayout
+            android:layout_below="@+id/describtion"
+            android:layout_width="match_parent"
+            android:background="@drawable/slide_title_gradient2"
+            android:padding="15dp"
+            android:id="@+id/card1"
+            android:layout_marginBottom="12dp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/line2"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/qsnraf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Question:"
+                    android:textColor="#8F6E07"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="7dp"
+                    app:fontFamily="@font/alfa_slab_one" />
+
+
+
+                <TextView
+                    android:id="@+id/amountQsn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF9800"
+                    app:fontFamily="@font/alfa_slab_one"
+                    android:text="0/12"
+                    android:layout_marginRight="6dp"
+                    android:layout_toEndOf="@+id/forwrdraf"
+                    android:layout_below="@id/qsnraf"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_toRightOf="@+id/forwrdraf" />
+            </LinearLayout>
+
+
+
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="40dp"
+
+                android:layout_centerHorizontal="true"
+                android:background="#c7c7c7" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/line1"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#AD8308"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/alfa_slab_one"
+                    android:layout_marginBottom="7dp"
+                    android:text="Duration:"/>
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="34:20"
+                    app:fontFamily="@font/alfa_slab_one"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:textColor="#FF9800"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--  </com.google.android.material.card.MaterialCardView> -->
+
+
+
+        <TextView
+            android:id="@+id/startRaf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card1"
+            android:text="start time:"
+            android:fontFamily="@font/alfa_slab_one"
+            android:textColor="#216824"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startRaf"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:textColor="#18631B"
+            android:text="12:34:20"
+            android:layout_toStartOf="@+id/view"
+            android:textSize="10sp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/view" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0.5dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/card1"
+            android:layout_centerHorizontal="true"
+            android:background="#c7c7c7" />
+
+        <TextView
+            android:id="@+id/endRaf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card1"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:layout_toEndOf="@+id/view"
+            android:layout_toRightOf="@+id/view"
+            android:text="End time:"
+            android:textColor="#7E0E0E"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/endRaf"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/view"
+            android:layout_toRightOf="@+id/view"
+            android:textColor="#861111"
+            android:text="12:34:20"
+            android:fontFamily="@font/alfa_slab_one"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/end_time"
+            android:layout_marginTop="7dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/rafsubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="your participation"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/alfa_slab_one"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/submit_error"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:src="@drawable/ic_warning_black_24dp" />
+
+            <ImageView
+                android:id="@+id/submit_correct"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:src="@drawable/check_mark_green" />
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

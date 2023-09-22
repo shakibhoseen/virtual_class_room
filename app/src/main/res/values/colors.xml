@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#F8B50C</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="storkcolor" tools:overide="true">#F8B50C</color>
+
+    <color name="orangeDark">#FF8C00</color>
+    <color name="greenDark">#8FE405</color>
+    <color name="yellow">#FFEB3B</color>
+
+    <color name="green_personal">#395A02</color>
+    <color name="green_personal_bright">#8ACF15</color>
+    <color name="red_personal">#700529</color>
+    <color name="red_personal_bright">#DA4741</color>
+
+    <color name="white_personal">#FFFFFF</color>
+    <!--switch color -->
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

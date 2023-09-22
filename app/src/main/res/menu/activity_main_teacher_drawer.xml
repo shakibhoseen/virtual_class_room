@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_teacher_gallery"
+            android:icon="@drawable/my_course"
+            android:title="*My course*" />
+        <item
+            android:id="@+id/nav_teacher_home"
+            android:icon="@drawable/three_people"
+            android:title="All course" />
+
+        <item
+            android:id="@+id/nav_teacher_share"
+            android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+            android:title="Student list" />
+        <item
+            android:id="@+id/nav_teacher_slideshow"
+            android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+            android:title="Teacher list" />
+
+
+    </group>
+
+    <item android:title="Activity">
+        <menu>
+            <item
+                android:id="@+id/nav_action_create"
+                android:icon="@drawable/ic_add_circle_outline_black_24dp"
+                android:title="Create ClassRoom" />
+
+            <item
+                android:id="@+id/nav_action_admin"
+                android:icon="@drawable/admin_icon"
+                android:title="Admin Panel" />
+
+        </menu>
+
+    </item>
+
+
+</menu>

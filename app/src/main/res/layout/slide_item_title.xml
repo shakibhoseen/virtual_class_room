@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="2dp"
+    android:elevation="4dp"
+    android:background="@drawable/trans_white_rectangle"
+    android:layout_marginBottom="2dp"
+    android:layout_height="wrap_content">
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="5dp"
+           android:orientation="vertical">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_marginBottom="4dp"
+               android:layout_height="wrap_content">
+
+
+               <ImageView
+                   android:id="@+id/identify_submit_img"
+                   android:layout_width="32dp"
+                   android:layout_height="32dp"
+                   android:visibility="gone"
+                   android:layout_alignParentRight="true"
+                   android:background="@drawable/custom_button"
+                   android:src="@drawable/assignment" />
+
+               <TextView
+                   android:id="@+id/title"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_toStartOf="@id/identify_submit_img"
+                   android:layout_toLeftOf="@id/identify_submit_img"
+                   android:maxLines="1"
+                   android:ellipsize="end"
+                   android:textColor="#030303"
+                   android:fontFamily="@font/alfa_slab_one"
+                   android:text="Title for Slide"
+                   android:textSize="14sp"
+                   android:textStyle="bold" />
+
+               <ImageView
+                   android:id="@+id/test_time_icon"
+                   android:layout_width="12dp"
+                   android:layout_height="12dp"
+                   android:layout_below="@id/title"
+                   android:layout_marginBottom="20dp"
+                   android:layout_marginTop="2dp"
+                   android:src="@drawable/white_time_black_24dp" />
+
+               <TextView
+                   android:id="@+id/publish_date"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/title"
+                   android:layout_marginLeft="10dp"
+                   android:layout_toEndOf="@+id/test_time_icon"
+                   android:layout_toRightOf="@+id/test_time_icon"
+                   android:ellipsize="end"
+                   android:maxLines="2"
+                   android:text="publish date"
+                   android:textSize="12sp"
+                   app:fontFamily="@font/alfa_slab_one" />
+
+               <LinearLayout
+                   android:id="@+id/liner1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/test_time_icon"
+                   android:layout_marginBottom="6dp"
+                   android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/file_icon_id"
+                        android:src="@drawable/docs_icon"/>
+
+                   <TextView
+                       android:id="@+id/describtion"
+                       android:textColor="#070303"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textStyle="bold"
+                       android:fontFamily="@font/iceland"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginLeft="5dp"
+                       android:text="describtion for the quize . how can i described the whole quize event"
+                       android:textSize="18sp" />
+
+
+               </LinearLayout>
+
+
+               <ImageView
+                   android:padding="6dp"
+                   android:id="@+id/dropdown_id"
+                   android:layout_alignParentRight="true"
+                   android:layout_below="@+id/liner1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+               <ImageView
+                   android:padding="6dp"
+                   android:layout_alignParentRight="true"
+                   android:visibility="gone"
+                   android:id="@+id/dropup_id"
+
+                   android:layout_below="@+id/liner1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_arrow_drop_up_white_24dp"/>
+
+           </RelativeLayout>
+
+
+
+
+           <LinearLayout
+               android:id="@+id/line1"
+               android:visibility="gone"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="#4607C0"
+                   android:id="@+id/download_btn_id"
+                   android:background="@drawable/style_slide_background"
+                   android:text="Download"/>
+
+           </LinearLayout>
+
+
+       </LinearLayout>
+
+
+</LinearLayout>

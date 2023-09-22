@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/extra_back4"
+    tools:context=".account.teacher.AdminMActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/trans_white_rectangle"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/carter_one"
+                android:text="change Admin password" />
+
+            <CheckBox
+                android:id="@+id/checkbox_passId"
+                android:layout_width="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/carter_one"
+                    android:text="Admin Old password: " />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/old_pass_input_layout"
+                    android:hint="Enter your Old Password"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/carter_one"
+                    android:text="Admin New password: " />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/new_pass_input_layout"
+                    android:hint="Enter your New Password"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/pass_chang_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FDFBFB"
+                    android:background="@drawable/custom_button2"
+                    android:layout_gravity="center_horizontal"
+                    android:text="change" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/carter_one"
+                android:text="change Student Security Code" />
+
+
+            <CheckBox
+                android:id="@+id/checkbox_studentId"
+                android:layout_width="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+               android:visibility="gone"
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/raf1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/carter_one"
+                        android:text="Student Register Security Code:"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/student_sec_txt_key_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/raf1"
+                        android:fontFamily="@font/carter_one"
+                        android:text="a56dhga"
+                        android:textSize="18sp"
+                        android:padding="10dp"
+                        android:layout_margin="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/background_left"
+                        android:textStyle="bold" />
+
+
+
+                    <TextView
+                        android:id="@+id/titleViewId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/student_sec_txt_key_id"
+                        android:fontFamily="@font/carter_one"
+                        android:text=" Change student Register Security Code:"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/student_sec_key_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/titleViewId"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Enter security Code"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                </RelativeLayout>
+
+
+
+
+                <Button
+                    android:id="@+id/change_student_btn_Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/custom_button"
+                    android:text="change" />
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/carter_one"
+                android:text="change Teacher Security Code" />
+
+            <CheckBox
+                android:id="@+id/checkbox_teacherId"
+                android:layout_width="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/raf2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/carter_one"
+                        android:text="Teacher Register Security Code:"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/teacher_sec_txt_key_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/raf2"
+                        android:fontFamily="@font/carter_one"
+                        android:text="a56dhga"
+                        android:textSize="18sp"
+                        android:padding="10dp"
+                        android:layout_margin="10dp"
+                        android:textColor="#FDFBFB"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/background_right"
+                        android:textStyle="bold" />
+
+
+
+                    <TextView
+                        android:id="@+id/titleViewId1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/teacher_sec_txt_key_id"
+                        android:fontFamily="@font/carter_one"
+                        android:text=" Change Teacher Register Security Code:"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/teacher_sec_key_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/titleViewId1"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Enter security Code"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                </RelativeLayout>
+
+
+
+
+                <Button
+                    android:id="@+id/change_teacher_btn_Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/custom_button2"
+                    android:text="change" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

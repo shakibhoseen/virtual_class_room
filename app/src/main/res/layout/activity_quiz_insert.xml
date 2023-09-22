@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".quiz.QuizInsertActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question for no: 1"
+                android:textSize="20sp"
+                android:id="@+id/questionPtrnNo"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/quiz_menu"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q.1"
+                android:layout_below="@+id/questionPtrnNo"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:id="@+id/question_NoId"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/questionTxId"
+                android:layout_below="@id/questionPtrnNo"
+                android:layout_toRightOf="@+id/question_NoId"
+                android:inputType="text"
+                android:layout_marginTop="0dp"
+
+                app:met_floatingLabel="normal"
+                android:hint="Enter your question"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@id/questionTxId"
+                android:id="@+id/relativeAId"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A."
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/optionAId"
+                    />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/optionTxAId"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/optionAId"
+                    android:inputType="text"
+                    android:layout_marginTop="0dp"
+
+
+                    app:met_floatingLabel="normal"
+                    android:hint="Input Option"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@id/relativeAId"
+                android:id="@+id/relativeBId"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B."
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/optionBId"
+                    />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/optionTxBId"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/optionBId"
+                    android:inputType="text"
+                    android:layout_marginTop="0dp"
+
+
+                    app:met_floatingLabel="normal"
+                    android:hint="Input Option"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@id/relativeBId"
+                android:id="@+id/relativeCId"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C."
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/optionCId"
+                    />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/optionTxCId"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/optionCId"
+                    android:inputType="text"
+
+
+                    app:met_floatingLabel="normal"
+                    android:hint="Input Option"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@id/relativeCId"
+                android:id="@+id/relativeDId"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D."
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/optionDId"
+                    />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/optionTxDId"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/optionDId"
+                    android:inputType="text"
+                    android:layout_marginTop="0dp"
+
+
+                    app:met_floatingLabel="normal"
+                    android:hint="Input Option"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeAnsId"
+                android:layout_below="@+id/relativeDId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Now give the correct option: "
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/describtion_view"
+                    android:layout_centerHorizontal="true"
+
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    app:errorEnabled="true"
+                    android:layout_below="@+id/describtion_view"
+                    android:id="@+id/correctAns"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="1"
+                    app:helperText="the foroat will be like A"
+                    android:hint="Correct option..."
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/questionDoneId"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/relativeAnsId"
+                android:text="Done"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qsnPrevBtn"
+                android:layout_marginTop="40dp"
+
+                android:layout_below="@+id/relativeAnsId"
+                android:text="Previous"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qsnNxtBtn"
+                android:layout_marginTop="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/relativeAnsId"
+                android:text="Next"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

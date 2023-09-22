@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_gallery">
+
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.myapplication.ui.mycourse.MyCourseStFragment"
+        android:label="My course"
+        tools:layout="@layout/fragment_student_gallery" />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.myapplication.ui.allcourse.AllCourseStFragment"
+        android:label="All course"
+        tools:layout="@layout/fragment_student_home" />
+
+    <fragment
+        android:id="@+id/nav_share_student_list"
+        android:name="com.example.myapplication.ui.studentlist.StudentListStFragment"
+        android:label="Student List"
+        tools:layout="@layout/fragment_student_share" />
+
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.myapplication.ui.teacherlist.TeacherListStFragment"
+        android:label="Teacher List"
+        tools:layout="@layout/fragment_student_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.example.myapplication.ui.tools.ToolsFragment"
+        android:label="Note Sharing"
+        tools:layout="@layout/fragment_tools" />
+
+
+</navigation>

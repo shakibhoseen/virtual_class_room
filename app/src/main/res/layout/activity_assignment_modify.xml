@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.assignment.AssignmentModifyActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/assignment"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/welcome"
+                android:text="Modification "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assignment Title: "
+                android:layout_marginTop="10dp"
+                android:id="@+id/titleViewId"
+                android:layout_below="@+id/welcome"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                app:errorEnabled="true"
+                android:layout_below="@+id/titleViewId"
+                android:id="@+id/quiz_title_id"
+                android:hint="Assignment Title"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assignment Description: "
+                android:layout_marginTop="10dp"
+                android:id="@+id/describtion_view"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/quiz_title_id"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                app:errorEnabled="true"
+                android:layout_below="@+id/describtion_view"
+                android:id="@+id/describtion"
+                android:hint="Assignment Description..."
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="submit available: "
+                android:layout_marginTop="10dp"
+                android:id="@+id/stRaf"
+                android:layout_below="@+id/describtion"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                app:errorEnabled="true"
+                android:layout_below="@+id/stRaf"
+                android:id="@+id/start_time"
+
+                android:hint="set the start time of submit"
+                app:helperText="Use this format 22-03-2017 14:18"
+                app:helperTextEnabled="true"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="datetime"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="last date: "
+                android:layout_marginTop="10dp"
+                android:id="@+id/endRaf"
+                android:layout_below="@+id/start_time"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                app:errorEnabled="true"
+                android:layout_below="@+id/endRaf"
+                android:id="@+id/end_time"
+                app:counterEnabled="true"
+
+                android:hint="set the last date of submit"
+                app:helperText="Use this format 22-03-2017 04:18"
+                app:helperTextEnabled="true"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="datetime"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update  Assignment"
+
+                android:id="@+id/implementBtn"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/end_time"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

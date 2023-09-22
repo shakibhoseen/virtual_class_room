@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">All courses</string>
+    <string name="gologin">"I have an account already <u>Go to</u> log in page"</string>
+    <string name="title_activity_main_teacher">MainTeacherActivity</string>
+    <string name="info_text"><p>This is the key for prevent any other student who are not engaged your class anymore. so you should give this code to the student who are actually in your classroom. this key help them to enter the virtual class</p> </string>
+    <string name="info_text_student"><p>This is the key for prevent unwanted users sign up. so you should give student security key.If you dont have please collect from Admin</p> </string>
+    <string name="info_text_teacher"><p>This is the key for prevent unwanted users sign up. so you should give teacher security key.If you dont have please collect from Admin</p> </string>
+
+    <string name="quix_number_distribution_text">By default correct point 1 and no decrease on wrong answer. if you change click more</string>
+    <string name="quix_number_distribution_text1">For every Question point increase (++) on Correct Option showing given below. And decrease (—) on Wrong option showing given bellow</string>
+
+    <string-array name="batch_name_arry">
+        <item>CSE 6th Batch</item>
+        <item>CSE 7th Batch</item>
+        <item>CSE 8th Batch</item>
+        <item>CSE 9th Batch</item>
+        <item>CSE 10th Batch</item>
+        <item>CSE 11th Batch</item>
+        <item>CSE 12th Batch</item>
+        <item>CSE 13th Batch</item>
+        <item>CSE 14th Batch</item>
+        <item>CSE 15th Batch</item>
+        <item>CSE 16th Batch</item>
+        <item>CSE 17th Batch</item>
+        <item>CSE 18th Batch</item>
+        <item>CSE 19th Batch</item>
+        <item>CSE 20th Batch</item>
+    </string-array>
+</resources>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@android:color/holo_green_light"
+    tools:context=".quiz.QuizFontActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/quiz_menu"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/welcome"
+                android:text="welcome "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz Title: "
+                android:layout_marginTop="10dp"
+                android:id="@+id/titleViewId"
+                android:layout_below="@+id/welcome"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                app:errorEnabled="true"
+                android:layout_below="@+id/titleViewId"
+                android:id="@+id/quiz_title_id"
+                android:hint="Quiz Title"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz Description: "
+                android:layout_marginTop="10dp"
+                android:id="@+id/describtion_view"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/quiz_title_id"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                app:errorEnabled="true"
+                android:layout_below="@+id/describtion_view"
+                android:id="@+id/describtion"
+                android:hint="Quiz Description..."
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration(s): "
+                android:layout_marginTop="10dp"
+                android:id="@+id/duration_view"
+                android:layout_below="@+id/describtion"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                app:errorEnabled="true"
+                android:layout_below="@+id/duration_view"
+                android:id="@+id/duration"
+                android:hint="Duration for every Question"
+                app:counterEnabled="true"
+                app:counterMaxLength="3"
+                android:layout_marginBottom="10dp"
+                app:helperText="give the input in second"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="numberDecimal"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How many Question you want to add: "
+                android:layout_marginTop="10dp"
+                android:id="@+id/total"
+                android:layout_below="@+id/duration"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                app:errorEnabled="true"
+                android:layout_below="@+id/total"
+                android:id="@+id/total_question"
+                app:counterEnabled="true"
+                app:counterMaxLength="3"
+                android:hint="Give total number of your Question"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="numberDecimal"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:id="@+id/numRaf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_question"
+                android:text="@string/quix_number_distribution_text"/>
+
+
+            <LinearLayout
+                android:layout_below="@id/numRaf"
+                android:id="@+id/line"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:padding="5dp"
+                    android:id="@+id/number_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="set number distribution"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+               android:layout_marginLeft="15dp"
+                android:layout_below="@+id/line"
+                android:id="@+id/line1"
+                android:visibility="gone"
+                android:background="@drawable/trans_white_rectangle"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set correct point: "
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/correct_score_input"
+                    android:layout_width="match_parent"
+                    app:errorEnabled="true"
+                    android:hint="set the correct point"
+                    app:helperText="Use this format 2.2 or 1 anything"
+                    app:helperTextEnabled="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:inputType="numberSigned|numberDecimal"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set wrong point: "
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/wrong_score_input"
+                    android:layout_width="match_parent"
+                    app:errorEnabled="true"
+                    android:hint="set the wrong point"
+                    app:helperText="Use this format 0.25 or 1 anything"
+                    app:helperTextEnabled="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:inputType="numberSigned|numberDecimal"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start time: "
+                android:layout_marginTop="50dp"
+                android:id="@+id/stRaf"
+                android:layout_below="@+id/line1"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                app:errorEnabled="true"
+                android:layout_below="@+id/stRaf"
+                android:id="@+id/start_time"
+
+                android:hint="set the start time"
+                app:helperText="Use this format 22-03-2017 14:18"
+                app:helperTextEnabled="true"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="datetime"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End time: "
+                android:layout_marginTop="10dp"
+                android:id="@+id/endRaf"
+                android:layout_below="@+id/start_time"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                app:errorEnabled="true"
+                android:layout_below="@+id/endRaf"
+                android:id="@+id/end_time"
+                app:counterEnabled="true"
+
+                android:hint="set the end time"
+                app:helperText="Use this format 22-03-2017 04:18"
+                app:helperTextEnabled="true"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="datetime"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go to implement"
+                android:id="@+id/implementBtn"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/end_time"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

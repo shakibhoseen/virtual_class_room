@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:id="@+id/title"
+        android:text="Security key:"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/securityKeyId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Enter Security Key"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:id="@+id/enter_btnId"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/securityKeyId"
+        android:layout_centerHorizontal="true"
+        android:text="Enter"/>
+
+</RelativeLayout>

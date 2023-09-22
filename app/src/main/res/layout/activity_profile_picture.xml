@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/androidp"
+    tools:context=".account.ProfilePicture">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/card"
+        app:cardElevation="6dp"
+        android:outlineAmbientShadowColor="#030303"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="#FFFFFf"
+            android:theme="@style/ToolbarThemeOvarly"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/ic_person_black_24dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:layout_marginRight="35dp"
+                    android:textSize="14sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:id="@+id/toolbar_txt"
+                    android:text="Profile"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:layout_below="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#80ffffff"
+            android:padding="3dp"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/meena">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/remove_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/remove_text"
+                android:layout_alignParentRight="true"
+                android:layout_margin="30dp"
+
+                android:background="@drawable/png_style_btn"
+                android:text="remove picture"
+                android:textColor="#020202" />
+
+            <TextView
+                android:id="@+id/remove_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card1"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFF8F8"
+                android:text="Upload new profile you should remove first"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="more"
+                android:layout_marginTop="20dp"
+                android:id="@+id/rafTxt"
+                android:layout_below="@+id/remove_pic"
+                android:textColor="#F3EEEE"/>
+
+            <CheckBox
+                android:id="@+id/checkbox_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rafTxt"
+                android:buttonTint="#FFFF"/>
+
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkbox_profile"
+                android:visibility="gone"
+
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/card2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/remove_pic"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/profile_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Myprofile name"
+                        android:textSize="18sp"
+                        android:textColor="#FFF8F8"
+                        android:textStyle="bold" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/profile_name_Edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Type your name"
+                       android:backgroundTint="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/card3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/profile_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="phone no"
+                        android:textColor="#FFF8F8"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/profile_phoneEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Type your phone"
+                        android:textColor="#FFF8F8"
+                        android:inputType="phone"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card3"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/profile_roll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="roll no"
+                        android:textColor="#FFF8F8"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/profile_rollEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Type your roll"
+                        android:textColor="#FFF8F8"
+                        android:inputType="phone"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_marginTop="40dp"
+                android:id="@+id/profile_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/png_style_btn"
+                android:text="Edit profile" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

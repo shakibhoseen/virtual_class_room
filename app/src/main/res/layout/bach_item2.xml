@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/slide_title_gradient2"
+    android:layout_marginBottom="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/profile_image"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="15dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/profile_image"
+        android:layout_toRightOf="@+id/profile_image"
+        android:text="course name hey i am using the title of course"
+        android:layout_toLeftOf="@+id/courseCodeId"
+        android:textColor="#030303"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:fontFamily="@font/alfa_slab_one"
+        android:id="@+id/courseNameId"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="70dp"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/carter_one"
+        android:layout_toEndOf="@+id/profile_image"
+        android:layout_toRightOf="@+id/profile_image"
+        android:layout_below="@id/teachernameId"
+        android:text="bach name"
+        android:maxLines="1"
+        android:id="@+id/batchNameId"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseNameId"
+        android:text="teacher name"
+        android:layout_toRightOf="@+id/profile_image"
+        android:fontFamily="@font/iceland"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/teachernameId"
+
+        android:textSize="16sp"
+        android:textColor="#030303"
+        android:maxLines="1"
+
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="CSE302"
+        android:fontFamily="@font/carter_one"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/courseCodeId"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp"
+        android:maxLines="1"
+
+        android:layout_marginTop="5dp"/>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="3dp"
+        android:background="#c7c7c7"
+        android:layout_below="@+id/batchNameId"
+        />
+
+
+</RelativeLayout>

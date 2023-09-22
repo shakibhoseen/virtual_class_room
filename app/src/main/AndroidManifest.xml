@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    package="com.example.myapplication">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+
+        android:name=".account.services.App"
+        android:allowBackup="true"
+        android:icon="@drawable/myapp"
+        android:label="Virtual Class Room"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/myapp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+
+
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/myapp" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+
+
+        <activity android:name=".account.assignment.AssignDetailsActivity" />
+        <activity android:name=".quiz.QuizDetailsActivity" />
+        <activity android:name=".SettngActivity" />
+        <activity android:name=".account.teacher.TeacherDetailsActivity" />
+        <activity android:name=".StudentDetailsActivity" />
+        <activity android:name=".extra.AllreviewListActivity" />
+        <activity android:name=".account.assignment.DownloadActivity" />
+        <activity android:name=".account.teacher.ModifyCorsPassActivity" />
+        <activity
+            android:name=".group_chat.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".slide.SlideModificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".slide.SlideCreateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".quiz.temporaryquiz.QuizGivenListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".quiz.temporaryquiz.QuizModificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.assignment.AssignmentModifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.assignment.AssignmentGivenListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.assignment.AssignmentUpload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.assignment.AssignmentCreateFontActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".quiz.temporaryquiz.QuizShowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".quiz.temporaryquiz.QuizStartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".quiz.QuizFontActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".quiz.QuizInsertActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.ProfilePicture"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.studentwork.ShowCourseDocument"
+            />
+        <activity
+            android:name=".account.teacher.MainTeacherActivity"
+            android:label="@string/title_activity_main_teacher"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".account.LogInActivity" />
+        <activity android:name=".account.teacher.AdminMActivity" />
+        <activity android:name=".account.RegisterActivity" />
+        <activity android:name=".account.teacher.RegisterTeacherActivity" />
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="virtual_class_room" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".quiz.review.ReviewStartActivity" />
+        <activity android:name=".quiz.review.ReviewActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".group_chat.MyFirebaseMessagingService"
+            android:directBootAware="true"
+            android:exported="false"
+            tools:targetApi="n">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".account.services.UploadService"/>
+        <service android:name=".account.services.ExampleJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name=".account.services.ExamJobIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name=".account.services.ExampleIntentService"/>
+    </application>
+
+</manifest>

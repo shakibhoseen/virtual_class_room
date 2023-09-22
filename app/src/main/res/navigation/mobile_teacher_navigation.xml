@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_teacher_gallery">
+
+
+    <fragment
+        android:id="@+id/nav_teacher_gallery"
+        android:name="com.example.myapplication.account.teacher.ui.gallery.TeacherGalleryFragment"
+        android:label="*My course*"
+        tools:layout="@layout/fragment_teacher_gallery" />
+
+    <fragment
+        android:id="@+id/nav_teacher_home"
+        android:name="com.example.myapplication.account.teacher.ui.home.HomeTeacherFragment"
+        android:label="All course"
+        tools:layout="@layout/fragment_teacher_home" />
+
+    <fragment
+        android:id="@+id/nav_teacher_share"
+        android:name="com.example.myapplication.account.teacher.ui.share.ShareTeacherFragment"
+        android:label="Student List"
+        tools:layout="@layout/fragment_teacher_share" />
+    <fragment
+        android:id="@+id/nav_teacher_slideshow"
+        android:name="com.example.myapplication.account.teacher.ui.slideshow.SlideshowTeacherFragment"
+        android:label="Teacher List"
+        tools:layout="@layout/fragment_teacher_share" />
+
+    <fragment
+        android:id="@+id/nav_action_create"
+        android:name="com.example.myapplication.account.teacher.ui.send.SendTeacherFragment"
+        android:label="Create ClassRoom"
+        tools:layout="@layout/fragment_teacher_send"
+        />
+
+</navigation>

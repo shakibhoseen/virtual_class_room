@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".account.RegisterActivity">
+
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/bsmrstuImgId"
+                 android:src="@drawable/bsmrstu"/>
+
+
+             <RelativeLayout
+
+                 android:layout_width="match_parent"
+                 android:orientation="vertical"
+                 android:layout_gravity="center"
+                 android:gravity="center_horizontal"
+                 android:background="@drawable/trans_white_rectangle"
+                 android:padding="16dp"
+                 android:layout_below="@+id/bsmrstuImgId"
+                 android:layout_height="wrap_content">
+
+
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:textAlignment="center"
+                     android:text="Create a new account"
+                     android:id="@+id/titleId"
+                     android:textSize="20sp"
+                     android:textColor="#030303"
+                     android:fontFamily="@font/alfa_slab_one"
+                     android:layout_marginBottom="10dp"
+                     android:textStyle="bold"
+                     android:gravity="center_horizontal" />
+
+
+                 <com.rengwuxian.materialedittext.MaterialEditText
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/username"
+                     android:layout_below="@+id/titleId"
+                     android:inputType="textEmailAddress"
+                     android:layout_marginTop="10dp"
+                     app:met_floatingLabel="normal"
+                     android:hint="Student Name"/>
+
+
+
+                 <com.google.android.material.textfield.TextInputLayout
+                     android:layout_width="match_parent"
+                     android:id="@+id/rollnoId"
+                     app:boxStrokeColor="@color/storkcolor"
+                     app:boxBackgroundColor="@color/colorPrimary"
+                     android:layout_below="@id/username"
+                     app:helperText="no white space allowed. use this format 16cse031"
+                     android:layout_height="wrap_content">
+
+                     <com.google.android.material.textfield.TextInputEditText
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:inputType="textEmailAddress"
+                         android:hint="Roll Number"
+                         android:layout_marginTop="10dp"
+                         />
+                 </com.google.android.material.textfield.TextInputLayout>
+
+
+                 <com.rengwuxian.materialedittext.MaterialEditText
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/email"
+                     android:inputType="textEmailAddress"
+                     android:layout_marginTop="10dp"
+                     app:met_floatingLabel="normal"
+                     android:layout_below="@+id/rollnoId"
+                     android:hint="Email"/>
+
+                 <com.google.android.material.textfield.TextInputLayout
+                     android:layout_width="match_parent"
+                     app:passwordToggleEnabled="true"
+                     android:id="@+id/password"
+                     app:boxStrokeColor="@color/storkcolor"
+                     app:boxBackgroundColor="@color/colorPrimary"
+                     android:layout_below="@+id/email"
+                     app:helperText="password shold be at least 6 character"
+                     android:layout_height="wrap_content">
+
+                     <com.google.android.material.textfield.TextInputEditText
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:inputType="textPassword"
+                         android:hint="Password"
+                         android:layout_marginTop="10dp"
+                         />
+                 </com.google.android.material.textfield.TextInputLayout>
+
+                 <com.rengwuxian.materialedittext.MaterialEditText
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/cnfrmPassword"
+                     android:inputType="textPassword"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginBottom="20dp"
+                     app:passwordToggleEnabled="true"
+                     android:layout_below="@+id/password"
+                     app:met_floatingLabel="normal"
+                     android:hint="Confirm Password"/>
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/cnfrmPassword"
+                     android:layout_marginRight="5dp"
+                     android:fontFamily="@font/alfa_slab_one"
+                     android:layout_toLeftOf="@+id/infoId"
+                     android:text="if you dont know about security key press i button"
+                     android:maxLines="1"/>
+
+
+                 <ImageButton
+
+                     android:layout_width="wrap_content"
+                     android:id="@+id/infoId"
+                     android:background="@drawable/custom_button"
+                     android:layout_alignParentRight="true"
+                     android:layout_below="@+id/cnfrmPassword"
+                     android:src="@drawable/ic_info_outline_black_24dp"
+                     android:layout_height="wrap_content"/>
+
+
+                 <com.google.android.material.textfield.TextInputLayout
+                     android:layout_width="match_parent"
+                     app:passwordToggleEnabled="true"
+                     android:id="@+id/securityKeyId"
+                     app:boxStrokeColor="@color/storkcolor"
+                     app:boxBackgroundColor="@color/colorPrimary"
+                     app:errorEnabled="true"
+                     android:layout_below="@id/infoId"
+                     android:layout_height="wrap_content">
+
+                     <com.google.android.material.textfield.TextInputEditText
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:inputType="textPassword"
+                         android:hint="Student Security key"
+                         android:layout_marginTop="10dp"
+                         />
+                 </com.google.android.material.textfield.TextInputLayout>
+
+                 <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Register"
+                     android:layout_centerHorizontal="true"
+                     android:id="@+id/btn_register"
+                     android:background="@drawable/custom_button"
+                     android:layout_marginTop="20dp"
+                     android:layout_below="@id/securityKeyId"
+                     android:textColor="#fff"/>
+
+
+                 <TextView
+                     android:layout_below="@id/btn_register"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="@string/gologin"
+                     android:textAlignment="center"
+                     android:textColor="#030303"
+                     android:fontFamily="@font/alfa_slab_one"
+                     android:layout_marginTop="20dp"
+                     android:padding="10dp"
+                     android:id="@+id/txtGologinPageId"
+                     />
+             </RelativeLayout>
+
+
+         </RelativeLayout>
+
+
+
+
+     </ScrollView>
+
+
+</LinearLayout>
