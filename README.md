@@ -35,7 +35,7 @@ You can view the PowerPoint presentation [here](https://raw.githubusercontent.co
 <!-- Add more slides as needed -->
 
 
-The Virtual Classroom App is a web-based education platform built on Firebase that offers a secure and interactive learning experience for both teachers and students.
+The Virtual Classroom App is a mobile application of an education platform built on Firebase that offers a secure and interactive learning experience for both teachers and students.
 
 ## Features
 
