@@ -3,7 +3,37 @@
 ### Presentation
 
 You can view the PowerPoint presentation [here](https://raw.githubusercontent.com/shakibhoseen/virtual_class_room/master/PresentationVirtual.pptx).
-<iframe src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/shakibhoseen/virtual_class_room/master/PresentationVirtual.pptx&embedded=true" width="640" height="480"></iframe>
+
+### Image Slideshow
+
+<!-- Slide 1 -->
+![Slide 1](./PresentationVirtual/Slide7.PNG)
+
+<!-- Slide 2 -->
+![Slide 2](./PresentationVirtual/Slide8.PNG)
+
+<!-- Slide 3 -->
+![Slide 3](./PresentationVirtual/Slide9.PNG)
+
+<!-- Slide 1 -->
+![Slide 1](./PresentationVirtual/Slide10.PNG)
+
+<!-- Slide 2 -->
+![Slide 2](./PresentationVirtual/Slide11.PNG)
+
+<!-- Slide 3 -->
+![Slide 3](./PresentationVirtual/Slide12.PNG)
+
+<!-- Slide 1 -->
+![Slide 1](./PresentationVirtual/Slide13.PNG)
+
+<!-- Slide 2 -->
+![Slide 2](./PresentationVirtual/Slide14.PNG)
+
+<!-- Slide 3 -->
+![Slide 3](./PresentationVirtual/Slide15.PNG)
+<!-- Add more slides as needed -->
+
 
 The Virtual Classroom App is a web-based education platform built on Firebase that offers a secure and interactive learning experience for both teachers and students.
 
@@ -63,7 +93,7 @@ This project is licensed under the [MIT License](LICENSE.md).
 
 ## Contact
 
-For questions or support, please contact [Your Name](mailto:your.email@example.com).
+For questions or support, please contact [Md shakib Hossain](mailto:shakibhossen100gmail.com).
 
 ---
 
