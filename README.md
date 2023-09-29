@@ -2,8 +2,8 @@
 
 ### Presentation
 
-You can view the PowerPoint presentation [here](https://github.com/shakibhoseen/virtual_class_room/raw/main/PresentationVirtual.pptx).
-<iframe src="https://docs.google.com/gview?url=https://github.com/shakibhoseen/virtual_class_room/raw/main/PresentationVirtual.pptx&embedded=true" width="640" height="480"></iframe>
+You can view the PowerPoint presentation [here](https://github.com/shakibhoseen/virtual_class_room/blob/master/PresentationVirtual.pptx).
+<iframe src="https://docs.google.com/gview?url=https://github.com/shakibhoseen/virtual_class_room/raw/master/PresentationVirtual.pptx&embedded=true" width="640" height="480"></iframe>
 
 The Virtual Classroom App is a web-based education platform built on Firebase that offers a secure and interactive learning experience for both teachers and students.
 
